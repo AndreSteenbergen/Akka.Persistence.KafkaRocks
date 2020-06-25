@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Akka.Persistence" Version="1.4.8" />
+      <PackageReference Include="Akka.Persistence.Query" Version="1.4.8" />
+      <PackageReference Include="Akka.Streams" Version="1.4.8" />
+      <PackageReference Include="Akka.Streams.Kafka" Version="1.0.1" />
+      <PackageReference Include="Confluent.Kafka" Version="1.4.3" />
+      <PackageReference Include="MessagePack" Version="2.1.143" />
+      <PackageReference Include="RocksDbNative" Version="6.2.2" />
+      <PackageReference Include="RocksDbSharp" Version="6.2.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="reference.conf" />
+      <EmbeddedResource Include="reference.conf" />
+    </ItemGroup>
+</Project>
